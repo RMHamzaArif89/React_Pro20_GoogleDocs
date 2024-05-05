@@ -3,3 +3,57 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #f3f3f3;
+}
+.editor{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.editor .ql-container{
+  background: white;
+  -webkit-box-shadow: 0 0 10px #716f6f;
+  box-shadow: 0 0 10px #787575;
+  border: none;
+  font-size: 1rem;
+  color: black;
+  font-family: sans-serif;
+  padding: 12px;
+  width: 8in;
+  height: 9in;
+  margin: 2rem;
+  border: none;
+}
+
+.editor .ql-toolbar{
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid rgb(193, 190, 190);
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  
+}
+
+
+@media print{
+
+  .editor .ql-container {
+    width: 6in;
+    height: 9in;
+    box-shadow: none;
+    background: white;
+    padding: none;
+    margin: none;
+  }
+  .editor .ql-toolbar{
+    display: none;
+  }
+}
